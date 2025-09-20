@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>InfoMovil</title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -23,15 +24,72 @@
         <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/inicio.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     </head>
 
-    <body>
-        <header>
-            <h1>ssssssssssssssssssssssssssssssssssssssssss</h1>
+    <body class="flex flex-col min-h-screen bg-gray-50 font-sans">
+        <header class="bg-blue-600 text-white shadow-lg">
+            <div class="container mx-auto px-6 py-4">
+                <h1 class="text-3xl font-bold">InfoMóvil</h1>
+                <p class="text-lg opacity-90">Tu centro de información dinámica</p>
+            </div>
         </header>
 
-        <footer>
+        <main class="flex-grow container mx-auto px-6 py-10">
+            <section class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Toda la información que necesitas en un solo lugar</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Explora información útil de los siguientes recursos que proporciona nuestro centro.
+                </p>
+            </section>
 
+            <section id="recursos">
+                <a href="clima.html" id="recurso-clima" class="contenedor contenedor-clima">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Clima Actual</h3>
+                        <p class="text-gray-200 mb-4">Consulta el clima de Coquimbo.</p>
+                        <div id="clima-info-index" class="text-left">
+                            <p class="text-gray-200">Cargando...</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="noticia.html" class="contenedor">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Noticias</h3>
+                        <p class="text-gray-600">Lo último del día.</p>
+                    </div>
+                </a>
+
+                <a href="receta.html" class="contenedor">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Recetas</h3>
+                        <p class="text-gray-600">Inspírate en la cocina.</p>
+                    </div>
+                </a>
+
+                <a href="personaje.html" class="contenedor">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Personajes</h3>
+                        <p class="text-gray-600">Descubre a tus favoritos.</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white mt-12">
+            <div class="container mx-auto px-6 py-4 text-center">
+                <p>&copy; 2025 InfoMóvil. Todos los derechos reservados.</p>
+                <p>Grupo 7. DD, DT, JC, MA.</p>
+            </div>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>
