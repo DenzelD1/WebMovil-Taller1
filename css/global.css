@@ -32,6 +32,10 @@ main {
     gap: 1.5rem; 
 }
 
+.filter-invert-dark {
+    filter: invert(100%);
+}
+
 @media (min-width: 769px) {
     #recursos {
         flex-direction: row;
