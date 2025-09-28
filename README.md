@@ -9,3 +9,5 @@ N° Grupo: 7
     Darwin Tapia Urrutia, 21.599.630-1
 
     Juan Ignacio Castro, 21.219.278-3
+
+    Martin Adones Tapia, 21.293.739-8
